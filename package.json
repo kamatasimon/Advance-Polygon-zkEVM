@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Kamata Simon",
+  "author": "gmchad <chad@ethsd.org>",
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "1.0.0",

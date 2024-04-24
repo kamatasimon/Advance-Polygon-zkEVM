@@ -23,14 +23,14 @@ template Multiplier2 () {
 component main = Multiplier2();
 ```
 ### Install
-`npm i`
+`yarn install`
 
 ### Compile
-`npx hardhat compile` 
+`yarn hardhat compile` 
 This will generate the **out** file with circuit intermediaries and geneate the **MultiplierVerifier.sol** contract
 
 ### Prove and Deploy
-`npx hardhat run scripts/deploy.ts`
+`yarn hardhat run scripts/deploy.js --network mumbai`
 This script does 4 things  
 1. Deploys the MultiplierVerifier.sol contract
 2. Generates a proof from circuit intermediaries with `generateProof()`

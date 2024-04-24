@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 import { task } from "hardhat/config";
 import { CircomCircuitConfig } from "hardhat-circom";
-const fs = require("fs");
+import fs from "fs";
 
 const CONFIG_PATH = process.env.BASE_PATH + "/circuits.config.json";
 const DIR_PATH = process.env.BASE_PATH + "/circuits/";
