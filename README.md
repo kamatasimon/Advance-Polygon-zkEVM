@@ -30,7 +30,7 @@ component main = Multiplier2();
 This will generate the **out** file with circuit intermediaries and geneate the **MultiplierVerifier.sol** contract
 
 ### Prove and Deploy
-`yarn hardhat run scripts/deploy.js --network mumbai`
+`yarn hardhat run scripts/deploy.js --network sepolia`
 This script does 4 things  
 1. Deploys the MultiplierVerifier.sol contract
 2. Generates a proof from circuit intermediaries with `generateProof()`

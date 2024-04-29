@@ -1,14 +1,14 @@
 import { ethers } from "hardhat";
 import { task } from "hardhat/config";
 import { CircomCircuitConfig } from "hardhat-circom";
-import fs from "fs";
+const fs = require("fs");
 
 const CONFIG_PATH = process.env.BASE_PATH + "/circuits.config.json";
 const DIR_PATH = process.env.BASE_PATH + "/circuits/";
 
 task("newcircuit", "Generate config for a new circuit")
   .addParam("name", "Name of the circuit")
-  .setAction(async (taskArgs: { name: string; }, {}: any) => {
+  .setAction(async (taskArgs, {}) => {
 
     let circuitsConfig: CircomCircuitConfig[] = [];
 
